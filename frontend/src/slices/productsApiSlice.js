@@ -1,14 +1,9 @@
-<<<<<<< HEAD
 import { PRODUCTS_URL, UPLOAD_URL } from "../constants";
-=======
-import { PRODUCTS_URL } from "../constants";
->>>>>>> 763ec553f1102d0400dc75d306f9efcdd15f42a4
 import { apiSlice } from "./apiSlice";
 
 export const productsApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     getProducts: builder.query({
-<<<<<<< HEAD
       query: ({ keyword, pageNumber }) => ({
         url: PRODUCTS_URL,
         params: {
@@ -19,12 +14,6 @@ export const productsApiSlice = apiSlice.injectEndpoints({
 
       keepUnusedDataFor: 5,
       providesTags: ["Products"],
-=======
-      query: () => ({
-        url: PRODUCTS_URL,
-      }),
-      keepUnusedDataFor: 5,
->>>>>>> 763ec553f1102d0400dc75d306f9efcdd15f42a4
     }),
     getProductDetails: builder.query({
       query: (productId) => ({
@@ -32,7 +21,6 @@ export const productsApiSlice = apiSlice.injectEndpoints({
       }),
       keepUnusedDataFor: 5,
     }),
-<<<<<<< HEAD
 
     createProduct: builder.mutation({
       query: () => ({
@@ -89,10 +77,3 @@ export const { useGetProductsQuery,
   useCreateReviewMutation,
   useGetTopProductsQuery,
 } = productsApiSlice;
-=======
-  }),
-});
-
-export const { useGetProductsQuery, useGetProductDetailsQuery } =
-  productsApiSlice;
->>>>>>> 763ec553f1102d0400dc75d306f9efcdd15f42a4

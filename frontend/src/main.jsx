@@ -30,9 +30,8 @@ import ProductListScreen from "./Screens/admin/ProductListScreen.jsx";
 import ProductEditScreen from "./Screens/admin/ProductEditScreen.jsx";
 import UserListScreen from "./Screens/admin/UserListScreen.jsx";
 import UserEditScreen from "./Screens/admin/UserEditScreen.jsx";
-import HomeScreen from "./Screens/HomeScreen";
-import ProductScreen from "./Screens/ProductScreen";
-import cartScreen from "./Screens/cartScreen";
+import { HelmetProvider } from "react-helmet-async";
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

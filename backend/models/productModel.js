@@ -20,13 +20,6 @@ const reviewSchema = mongoose.Schema(
       required: true,
     },
   },
-<<<<<<< HEAD
-
-=======
-  {
-    timestamps: true,
-  }
->>>>>>> 763ec553f1102d0400dc75d306f9efcdd15f42a4
 );
 // import { string } from "prop-types";
 
@@ -57,7 +50,6 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-<<<<<<< HEAD
     price: {
       type: Number,
       required: true,
@@ -65,11 +57,6 @@ const productSchema = new mongoose.Schema(
     reviews: [reviewSchema],
     description: {
       type: String,
-=======
-    reviews: [reviewSchema],
-    rating: {
-      type: Number,
->>>>>>> 763ec553f1102d0400dc75d306f9efcdd15f42a4
       required: true,
       default: 0,
     },
@@ -93,10 +80,6 @@ const productSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
-<<<<<<< HEAD
 const Product = mongoose.model("Product", productSchema);
-=======
-const Product = mongoose.model("product", productSchema);
->>>>>>> 763ec553f1102d0400dc75d306f9efcdd15f42a4
 
 export default Product;

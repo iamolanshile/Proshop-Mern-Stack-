@@ -11,15 +11,9 @@ const orderSchema = mongoose.Schema(
       {
         name: { type: String, required: true },
         qty: { type: Number, required: true },
-<<<<<<< HEAD
         image: { type: String, required: true },
         price: { type: Number, required: true },
         product: {
-=======
-        image: { type: String, require: true },
-        price: { type: Number, required: true },
-        products: {
->>>>>>> 763ec553f1102d0400dc75d306f9efcdd15f42a4
           type: mongoose.Schema.Types.ObjectId,
           required: true,
           ref: "Product",
@@ -42,16 +36,10 @@ const orderSchema = mongoose.Schema(
       update_time: { type: String },
       email_address: { type: String },
     },
-<<<<<<< HEAD
     itemsPrice: {
       type: Number,
       required: true,
       default: 0.0,
-=======
-    itemPrice: {
-      type: Number,
-      required: true,
->>>>>>> 763ec553f1102d0400dc75d306f9efcdd15f42a4
     },
     taxPrice: {
       type: Number,
@@ -85,7 +73,6 @@ const orderSchema = mongoose.Schema(
       type: Date,
     },
   },
-<<<<<<< HEAD
   {
     timestamps: true,
   }
@@ -94,11 +81,3 @@ const orderSchema = mongoose.Schema(
 const Order = mongoose.model("Order", orderSchema);
 
 export default Order;
-=======
-  { timestamps: true }
-);
-
-const order = mongoose.model("order", orderSchema);
-
-export default order;
->>>>>>> 763ec553f1102d0400dc75d306f9efcdd15f42a4

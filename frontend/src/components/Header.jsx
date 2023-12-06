@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
 import { Badge, Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
@@ -28,16 +27,6 @@ const Header = () => {
     }
   };
 
-=======
-import { Badge, Navbar, Nav, Container } from "react-bootstrap";
-import { FaShoppingCart, FaUser } from "react-icons/fa";
-import { LinkContainer } from "react-router-bootstrap";
-import { useSelector } from "react-redux/es/hooks/useSelector";
-import logo from "../assets/logo.png";
-
-export const Header = () => {
-  const { cartItems } = useSelector((state) => state.cart);
->>>>>>> 763ec553f1102d0400dc75d306f9efcdd15f42a4
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
@@ -51,10 +40,7 @@ export const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-<<<<<<< HEAD
               <SearchBox />
-=======
->>>>>>> 763ec553f1102d0400dc75d306f9efcdd15f42a4
               <LinkContainer to="/cart">
                 <Nav.Link>
                   <FaShoppingCart />
@@ -66,7 +52,6 @@ export const Header = () => {
                   )}
                 </Nav.Link>
               </LinkContainer>
-<<<<<<< HEAD
               {userInfo ? (
                 <NavDropdown title={userInfo.name} id="username">
                   <LinkContainer to="/profile">
@@ -97,14 +82,6 @@ export const Header = () => {
                   </LinkContainer>
                 </NavDropdown>
               )}
-=======
-              <LinkContainer to="/login">
-                <Nav.Link href="/login">
-                  <FaUser />
-                  Sign In
-                </Nav.Link>
-              </LinkContainer>
->>>>>>> 763ec553f1102d0400dc75d306f9efcdd15f42a4
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -112,8 +89,5 @@ export const Header = () => {
     </header>
   );
 };
-<<<<<<< HEAD
 
 export default Header;
-=======
->>>>>>> 763ec553f1102d0400dc75d306f9efcdd15f42a4
